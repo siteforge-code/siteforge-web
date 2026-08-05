@@ -1,6 +1,12 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+// ... alla dina andra imports (motion, lucide-react etc) ...
+
+export default function Page() { 
+  // ... resten av koden ...
+
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ArrowRight, 
