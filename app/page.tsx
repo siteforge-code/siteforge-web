@@ -50,7 +50,7 @@ const serviceList = [
 
 // --- KOMPONENTER ---
 
-const Nav = ({ lang, setLang, t }) => {
+const Nav = ({ lang, setLang, t }: any) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -213,7 +213,7 @@ export default function SiteForgeApp() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-12">
-            {serviceList.map((service) => (
+            {serviceList.map((service: any) => (
               <motion.div 
                 key={service.id}
                 whileHover={{ y: -10 }}
@@ -244,7 +244,7 @@ export default function SiteForgeApp() {
                { num: "01", title: "Analys", desc: "Vi kartlägger dina konkurrenter och hittar din unika vinkel." },
                { num: "02", title: "Forge", desc: "Själva bygget. Vi använder Next.js för maximal prestanda." },
                { num: "03", title: "Boost", desc: "Vi lanserar och optimerar för konvertering och tillväxt." }
-             ].map((step, i) => (
+            ].map((step: any, i: number) => (
                <div key={i} className="text-center px-10 mb-20 md:mb-0">
                  <div className="w-16 h-16 bg-white border-4 border-black text-black text-2xl font-black flex items-center justify-center mx-auto mb-8 rounded-full shadow-[6px_6px_0px_#3b82f6]">
                    {step.num}
